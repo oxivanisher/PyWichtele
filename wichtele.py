@@ -119,7 +119,7 @@ def calculate(config):
 def sendEmail(config, donator, reciever, donatorEmail):
     log.debug("Sending email to %s (for %s)" % (donator, reciever))
 
-    msg = MIMEText('Hallo %s\nDein Wichteli fuer dieses Jahr ist: %s\n\nBitte antworte NICHT auf dieses email!\n\nGruss,\nein Programm von Marc :)' % (donator.title(), reciever.title()))
+    msg = MIMEText('Hallo %s\n\nDein Wichteli fuer dieses Jahr ist: %s\n\nBitte antworte NICHT auf dieses email!\n\nGruss,\nein Programm von Marc :)' % (donator.title(), reciever.title()))
     msg['Subject'] = 'Wichtele %s' % time.strftime('%Y')
     msg['From'] = config['from']
     msg['To'] = donatorEmail
