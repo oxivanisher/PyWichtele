@@ -1,0 +1,21 @@
+wichteli:
+  - "wichteli1": "wichteli1@domain.com"
+  - "wichteli2": "wichteli2@domain.com"
+  - "wichteli3": "wichteli3@domain.com"
+  - "wichteli4": "wichteli4@domain.com"
+  - "wichteli5": "wichteli5@domain.com"
+
+notwant:
+  wichteli1:
+    - "wichteli2"
+    - "wichteli3"
+  wichteli2:
+    - "wichteli1"
+  wichteli3:
+    - "wichteli5"
+
+email:
+  login: "login"
+  password: "password"
+  from: "Your Name <wichteli1@domain.com>"
+  server: "your.server.com"
